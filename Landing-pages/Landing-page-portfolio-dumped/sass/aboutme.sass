@@ -1,0 +1,301 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	-webkit-background-size: cover 
+	-o-background-size: cover
+	.top-line
+		width: 1060px
+		position: absolute
+		left: 50%
+		top: 5%
+		margin-left: -530px
+		z-index: 3 
+
+#cube-loader 
+  align-items: center
+  display: flex
+  height: 100%
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: $dark
+  z-index: 100 
+  & .caption 
+    margin: 0 auto
+  
+  .cube-loader 
+    width: 73px
+    height: 73px
+    margin: 0 auto
+    margin-top: 49px
+    position: relative
+    transform: rotateZ(45deg)
+
+    & .cube 
+      position: relative
+      transform: rotateZ(45deg)
+      width: 50%
+      height: 50%
+      float: left
+      transform: scale(1.1)
+    
+    & .cube:before 
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(52, 73, 94, 1.0)
+      animation: cube-loader 2.76s infinite linear both
+      transform-origin: 100% 100%
+    
+    & .loader-2 
+      transform: scale(1.1) rotateZ(90deg)
+    
+    & .loader-3 
+      transform: scale(1.1) rotateZ(180deg)
+    
+    & .loader-4 
+      transform: scale(1.1) rotateZ(270deg)
+    
+    & .loader-2:before 
+      animation-delay: 0.35s
+    
+    & .loader-3:before 
+      animation-delay: 0.69s
+    
+    & .loader-4:before 
+      animation-delay: 1.04s
+ 
+@keyframes cube-loader 
+  0%, 10% 
+    transform: perspective(136px) rotateX(-180deg)
+    opacity: 0
+  
+  25%, 75% 
+    transform: perspective(136px) rotateX(0deg)
+    opacity: 1
+  
+  90%, 100% 
+    transform: perspective(136px) rotateY(180deg)
+    opacity: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.logo
+	img
+		width: 75px
+		height: auto
+		margin-left: 45px
+
+nav
+	width: 368px
+	height: 43px
+	display: inline-block
+	float: right
+	li
+		display: inline-block
+		margin: 12px
+		font-size: 20px
+		font-weight: 800  
+		a
+			color: #FFF
+			text-decoration: none !important
+			&:hover
+				color: $accent  
+			&::after
+				display: block
+				content: ''
+				height: 5px
+				width: 0
+				background-color: #fff
+				transition: width .3s ease-in-out
+			&:hover::after, &:focus::after
+				width: 100%
+
+.second
+	color: $accent  
+	&:hover
+		color: #FFF 
+	&::after
+		background-color: $accent !important 
+
+.aboutme
+	position: relative
+	width: 100%
+	min-height: 100vh
+	height: 100vh
+	background-size: cover 
+	background-repeat: no-repeat 
+
+.wrap
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	display: flex
+	-webkit-justify-content: center 
+	justify-content: center 
+	-webkit-align-items: center 
+	align-items: center 
+	z-index: 1
+
+.card
+	width: 800px
+	height: 400px
+	position: relative
+	-webkit-perspective: 1000px 
+	-moz-perspective: 1000px 
+	perspective: 1000px 
+	z-index: 3
+	
+
+.front, .back
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	display: flex
+	transition: 2s 
+	-webkit-backface-visibility: hidden 
+	-moz-backface-visibility: hidden 
+	backface-visibility: hidden 
+	-webkit-border-radius: 10px 
+	border-radius: 10px 
+	z-index: 3
+
+.front
+	background-color: #A6D5D4
+	box-shadow: 0 14px 28px rgba(0,0,0,0.45), 0 10px 10px rgba(0,0,0,0.42)
+
+	
+.back
+	background-color: $about
+	box-shadow: 0 14px 28px rgba(0,0,0,0.45), 0 10px 10px rgba(0,0,0,0.42)
+	transform: rotateY(180deg)
+	
+.card:hover .front  
+	transform: rotateY(180deg)
+.card:hover .back  
+	transform: rotateY(360deg)
+	
+.footcon
+	position: relative
+	background-color: $accent
+	width: 100%
+	min-height: 150px 
+	
+.author
+	color: #FFF
+	font-size: 18px
+	position: absolute
+	left: 60px
+	bottom: 40px
+
+.avatar
+	-webkit-border-radius: 10px 
+	border: 3px solid rgba($accent, .6) 
+	border-radius: 15px 
+	margin: 10px
+	width: 100px 
+	height: 100px
+	display: flex
+	-webkit-justify-content: center 
+	justify-content: center 
+	-webkit-align-items: center 
+	align-items: center 
+	background-color: #FFF 
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+.span
+	width: 600px
+	height: 300px
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)	
+	position: relative
+	top: 50%
+	left: 50%
+	margin-left: -375px
+	margin-top: -150px 
+	
+#first
+	background-color: #8ABBBA
+#second
+	background-color: #DDAB95 
+	p
+		padding: 0 25px !important
+
+
+p
+	font-weight: 600  
+	font-size: 15px
+	padding: 30px 25px
+	color: $dark 
+
+.links
+	width: 128px
+	-webkit-border-radius: 10px 0 0 10px 
+	border-radius: 10px 0 0 10px 
+	img
+		padding: 3px 10px
+
+
+@import "media" // Всегда в конце

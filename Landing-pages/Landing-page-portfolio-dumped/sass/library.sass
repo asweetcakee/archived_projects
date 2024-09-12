@@ -1,0 +1,234 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	-webkit-background-size: cover 
+	-o-background-size: cover
+	.top-line
+		width: 1060px
+		position: relative
+		left: 50%
+		top: 5%
+		margin-left: -530px
+		z-index: 3 
+
+.lib
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	background-repeat: no-repeat
+
+#cube-loader 
+  align-items: center
+  display: flex
+  height: 100%
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: $dark
+  z-index: 100 
+  & .caption 
+    margin: 0 auto
+  
+  .cube-loader 
+    width: 73px
+    height: 73px
+    margin: 0 auto
+    margin-top: 49px
+    position: relative
+    transform: rotateZ(45deg)
+
+    & .cube 
+      position: relative
+      transform: rotateZ(45deg)
+      width: 50%
+      height: 50%
+      float: left
+      transform: scale(1.1)
+    
+    & .cube:before 
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(52, 73, 94, 1.0)
+      animation: cube-loader 2.76s infinite linear both
+      transform-origin: 100% 100%
+    
+    & .loader-2 
+      transform: scale(1.1) rotateZ(90deg)
+    
+    & .loader-3 
+      transform: scale(1.1) rotateZ(180deg)
+    
+    & .loader-4 
+      transform: scale(1.1) rotateZ(270deg)
+    
+    & .loader-2:before 
+      animation-delay: 0.35s
+    
+    & .loader-3:before 
+      animation-delay: 0.69s
+    
+    & .loader-4:before 
+      animation-delay: 1.04s
+ 
+@keyframes cube-loader 
+  0%, 10% 
+    transform: perspective(136px) rotateX(-180deg)
+    opacity: 0
+  
+  25%, 75% 
+    transform: perspective(136px) rotateX(0deg)
+    opacity: 1
+  
+  90%, 100% 
+    transform: perspective(136px) rotateY(180deg)
+    opacity: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.logo
+	img
+		width: 75px
+		height: auto
+		margin-left: 45px
+
+nav
+	width: 368px
+	height: 43px
+	display: inline-block
+	float: right
+	li
+		display: inline-block
+		margin: 12px
+		font-size: 20px
+		font-weight: 800  
+		a
+			color: #FFF
+			text-decoration: none !important
+			&:hover
+				color: $accent  
+			&::after
+				display: block
+				content: ''
+				height: 5px
+				width: 0
+				background-color: #fff
+				transition: width .3s ease-in-out
+			&:hover::after, &:focus::after
+				width: 100%
+
+.second
+	color: $accent  
+	&:hover
+		color: #FFF 
+	&::after
+		background-color: $accent !important 
+
+.lib
+	min-height: 700px
+
+.footcon
+	position: relative
+	background-color: $accent
+	width: 100%
+	min-height: 150px 
+	
+.author
+	color: #FFF
+	font-size: 18px
+	position: absolute
+	left: 60px
+	bottom: 40px
+
+.section
+	perspective: 1000px
+
+.container
+	background-color: #FFF 
+	width: 680px
+	position: relative
+	margin-top: 200px !important
+	left: 50%
+	margin-left: -340px !important
+	margin: auto
+	display: flex
+	-webkit-flex-wrap: nowrap
+	-ms-flex-wrap: nowrap
+	flex-wrap: nowrap
+	-webkit-justify-content: center 
+	justify-content: center 
+	-webkit-align-items: center 
+	align-items: center 
+	height: 100%
+	ransition: 1s
+  transform: rotateX(55deg) rotateZ(-45deg) rotateY(10deg)
+  transform-style: preserve-3d
+  
+.image
+	max-width: 100%
+	
+
+.card
+	width: 200px
+	margin: 10px
+
+@import "media" // Всегда в конце

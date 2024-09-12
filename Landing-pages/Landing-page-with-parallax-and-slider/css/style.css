@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.65;
+    background-color: #000000;
+    color: #fff;
+    overflow-x: hidden !important;
+    min-height: 320px;
+}
+
+.container{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Костыль, мне лень искать выпирающий элемент xd*/
+.my-page{
+    overflow-x: hidden !important; 
+}
+
+.site-header{
+    position: relative;
+    min-height: 700px;
+    height: 100vh;
+    /* background-color: #000; */
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+.top-line{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    /* left: 50%; */
+    /* background-color: #000000; */
+    /* margin-left: -530px;  */
+    /* border-bottom: 1.5px ridge #fff; */
+}
+
+.top-line > nav > ul{
+    margin-left: 900px;
+    width: 310px;
+} 
+li{
+    margin: 20px 5px;   
+    list-style: none;
+    display: inline-block;
+}
+
+li > a, li > a:hover{
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 15px;
+}
+
+li > a:after{
+    display: block;
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: aqua;
+    transition: .3s ease-in-out;
+}
+
+li > a:hover::after, li > a:focus::after{
+    width: 100%;
+}
+
+.hamburger{
+    display: none !important;
+    position: relative;
+    left: 50%;
+    margin-top: 15px !important;
+    margin-left: 35% !important;
+    color: #fff;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+    background-color: #fff !important;
+}
+/* .hamburger hamburger--spin is-active{
+    right: 10px !important;
+} */
+.icon{
+    position: absolute;
+    top: 12%;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.site-welcome{
+    position: relative;
+    left: 50%;
+    top: 37%;
+    margin-left: -570px;
+    color: #fff;
+    width: 500px;
+    height: 300px;
+    /* background-color: #fff; */
+    text-align: center;
+}
+
+.title{
+    font-size: 46px;  
+    margin-bottom: 10px;
+}
+
+.welcome-line{
+    height: 2px;
+    background-color: #fff;
+    border: none;
+}
+
+.welcome-text{
+    margin-top: 13px;
+}
+
+.content-me{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    /* position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -600px; */
+    /* background-color: yellow; */
+}
+
+.container{
+    position: relative;
+    padding-top: 10px;
+    width: 100% !important;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.info{
+    width: 100%;
+    height: 100vh;
+    background-color: #e34925;
+    /* filter: brightness(70%); */
+}
+
+#photo{
+    background-image: url("../img/marvel4.jpg");
+    background-size: cover;
+    filter: brightness(80%);
+}
+
+.triangle{
+    position: absolute;
+    width: 0px;
+	height: 0px;
+	border-top: 20px solid #e34925; 
+    border-left: 20px solid transparent;
+    top: 30%;
+    right: 50%;
+    z-index: 9;
+}
+
+.aboutme{
+    color: #fff;
+}
+
+.about-line{
+    height: 2px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+}
+
+.about-text{
+    font-size: 16px;
+    min-height: 320px;
+    width: 450px;
+    height: 100%;
+    /* background-color: rgb(51, 201, 188); */
+    position: relative;
+    top: 10%;
+    left: 10%;
+    text-align: left;
+}
+
+.portfolio{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.portfolio > .container > .row > .col-sm-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.con{
+    width: 100%;
+    height: 100vh;
+}
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0%;
+}
+
+.fotorama{
+    position: relative;
+    top: 20%;
+}
+
+.fotoram_info{
+    background-color: #000;
+}
+.fotoram_info > .about-text{
+    /* background-color: red; */
+    top: 25%;
+    min-height: 300px;
+}
+
+.my-footer{
+    background-color: rgb(8, 12, 37);
+    width: 100%;
+    height: 100%;
+}
+
+.contact-me{
+    width: 100%;
+    height: 100vh;
+}
+
+.forma{
+    position: relative;
+    left: 50%;   
+    top: 15%; 
+    margin-left: -190px;
+    width: 400px;
+    height: 350px;
+    /* background-color: yellow; */
+}
+
+input, textarea{
+    padding-left: 10px;
+    width: 100%;
+    background-color: rgb(252, 204, 149);
+    outline: none;
+    border: 1.5px solid rgb(243, 158, 60);
+    border-radius: 3px;
+}
+
+input{
+    height: 30px;
+    margin-top: 5px !important;    
+}
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder { color: rgb(146, 90, 25); }
+textarea::-moz-placeholder, input::-moz-placeholder { color: rgb(209, 123, 25); }
+
+button{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(252, 204, 149);
+    border: 1.5px solid rgb(243, 158, 60);
+    outline: none;
+    position: relative;
+    left: 50%;
+    margin-left: -100px !important;
+}
+
+.textarea{
+    margin-top: 20px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+#photo2{
+    width: 100%;
+    height: 70vh;
+    background-image: url("../img/bg-5.jpg");
+    background-size: cover;
+    filter: brightness(80%);
+    background-position-x: 50%;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 5%;
+    box-shadow: inset 2px 2px 5px rgba(8, 12, 37, 0.5), 2px 3px 5px rgb(3, 5, 17);
+
+}
+
+form > p{
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.footer{
+    border-top: 2px solid rgb(31, 40, 160);
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+}
+.footer > p{
+    position: relative;
+    top: 25%;
+    left: 5%;
+    font-size: 18px;
+    /* display: inline-block; */
+}
+
+.footer > p > i{
+    margin: 10px;
+}
+.footer > p > i:hover{
+    color: rgb(90, 112, 238);
+}
+/* .social{
+    position: relative !important;
+    right: 50% !important;
+} */
+
+/* .foot-info{
+    width: 100%;
+    min-height: 700px;
+    background-color: rgb(13, 3, 20);
+} */
+
+/* .fotorama__stage{
+    width: 700px !important;
+} */
+

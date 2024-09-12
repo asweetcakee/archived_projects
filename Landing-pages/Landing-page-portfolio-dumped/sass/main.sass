@@ -1,0 +1,435 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+#my-page
+	overflow-x: hidden !important
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden !important
+	&.ishome
+		.site-header
+			min-height: 700px
+			height: 100vh
+			background-color: $dark
+			color: #FFF
+			.top-line
+				width: 1060px
+				position: absolute
+				left: 50%
+				top: 5%
+				margin-left: -530px
+				z-index: 3 
+
+#cube-loader 
+  align-items: center
+  display: flex
+  height: 100%
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: $dark
+  z-index: 100 
+  & .caption 
+    margin: 0 auto
+  
+  .cube-loader 
+    width: 73px
+    height: 73px
+    margin: 0 auto
+    margin-top: 49px
+    position: relative
+    transform: rotateZ(45deg)
+
+    & .cube 
+      position: relative
+      transform: rotateZ(45deg)
+      width: 50%
+      height: 50%
+      float: left
+      transform: scale(1.1)
+    
+    & .cube:before 
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(52, 73, 94, 1.0)
+      animation: cube-loader 2.76s infinite linear both
+      transform-origin: 100% 100%
+    
+    & .loader-2 
+      transform: scale(1.1) rotateZ(90deg)
+    
+    & .loader-3 
+      transform: scale(1.1) rotateZ(180deg)
+    
+    & .loader-4 
+      transform: scale(1.1) rotateZ(270deg)
+    
+    & .loader-2:before 
+      animation-delay: 0.35s
+    
+    & .loader-3:before 
+      animation-delay: 0.69s
+    
+    & .loader-4:before 
+      animation-delay: 1.04s
+    
+  
+
+
+@keyframes cube-loader 
+  0%, 10% 
+    transform: perspective(136px) rotateX(-180deg)
+    opacity: 0
+  
+  25%, 75% 
+    transform: perspective(136px) rotateX(0deg)
+    opacity: 1
+  
+  90%, 100% 
+    transform: perspective(136px) rotateY(180deg)
+    opacity: 0
+  
+
+  
+
+
+header, section
+	background-size: cover
+	-webkit-background-size: cover
+	
+header::after
+	min-height: 700px !important
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(255,89,182,.3)
+	z-index: 2 
+	
+		 
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.logo
+	img
+		width: 75px
+		height: auto
+		margin-left: 45px
+
+nav
+	width: 368px
+	height: 43px
+	display: inline-block
+	float: right
+	li
+		display: inline-block
+		margin: 12px
+		font-size: 20px
+		font-weight: 800  
+		a
+			color: #FFF
+			text-decoration: none !important
+			&:hover
+				color: $accent  
+			&::after
+				display: block
+				content: ''
+				height: 5px
+				width: 0
+				background-color: #fff
+				transition: width .3s ease-in-out
+			&:hover::after, &:focus::after
+				width: 100%
+
+.second
+	color: $accent  
+	&:hover
+		color: #FFF 
+	&::after
+		background-color: $accent !important 
+	
+
+.welcome
+	position: absolute
+	width: 1060px
+	top: 25%
+	left: 50%
+	margin-left: -530px
+	text-align: center
+	z-index: 3
+	.h3
+		font-size: 49px
+		font-weight: 200
+	.hr
+		position: absolute
+		bottom: 40%
+		left: 50%
+		margin-left: -400px
+		width: 800px
+		height: 2px
+		background-color: #FFF 
+	.p
+		margin-top: -5%
+		font-size: 25px
+
+.go
+	position: relative
+	top: -50px
+	width: 250px
+	height: 60px
+	left: 50%
+	margin-left: -125px
+	background-color: $accent
+	color: #FFF
+	font-size: 18px
+	font-weight: 800 
+	text-align: center   
+	z-index: 4
+
+#help
+	position: relative
+	top: 25%
+
+.h1
+	color: $accent 
+	margin-top: 0 
+
+.me
+	width: 960px
+	min-height: 700px
+	margin-top: 100px
+	position: relative
+	left: 50%
+	margin-left: -480px
+	text-align: center
+	.p2
+		width: 720px
+		position: relative
+		left: 50%
+		margin-left: -360px
+		color: $text
+		font-weight: 400  
+		font-size: 18px
+	
+.inform
+	margin-top: 100px
+	width: 100%
+
+.edit
+	margin: 0 14px
+	
+.icons
+	width: 80px
+	transition: all 0.2s ease-out
+	perspective: 150px 
+	&:hover
+		width: 100px
+		border: 5px solid rgba($accent, 0.8) 
+		-webkit-border-radius: 10px 
+		border-radius: 100% 
+
+.lovely
+	font-size: 19px
+	font-weight: 800 
+	color: $accent 
+
+
+.txt
+	color: $text 
+	
+.gallery
+	width: 100% 
+	height: 100vh
+
+.fotorama
+	img
+		filter: grayscale(60%) brightness(90%)
+		transition: all 0.3s ease-out !important
+	img:hover
+		filter: grayscale(0%)
+
+.hr2
+	width: 1200px
+	position: absolute
+	bottom: 30px
+	left: 50%
+	margin-left: -600px
+	height: 1px
+	background-color: $text
+
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 6px // расстояние м/у кнопками
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+.hr3
+	width: 1200px
+	position: absolute
+	margin-top: 50px
+	left: 50%
+	margin-left: -600px
+	height: 1px
+	background-color: $text
+
+.forma
+	margin-top: 100px
+	text-align: center
+	width: 960px
+	min-height: 600px
+	position: relative
+	left: 50%
+	margin-left: -480px
+	display: inline-block
+
+input, textarea
+	background-color: rgba($accent, .3%)
+	border: rgba(#000, .1%) 1px solid
+	border-bottom: rgba(#000, .1%) 2px solid
+	border-radius: 2px
+	padding: 8px 22px
+	outline: none
+	display: inline-block
+	font-size: 16px
+	color: #333
+	
+.textarea
+	margin-top: 20px
+	width: 440px
+	height: 250px
+	margin-bottom: 20px
+	
+.footcon
+	position: relative
+	background-color: $accent
+	width: 100%
+	min-height: 250px 
+
+.footimg
+	text-align: center
+	margin-left: 185px
+	width: 100px
+	background-color: #fff
+	display: inline-block
+	height: 90px
+	border: 5px solid rgba($accent, .4)
+	position: relative
+	top: -45px 
+
+.fab
+	position: relative
+	top: 50%
+	margin-top: -45px
+	color: $accent 
+	font-size: 3.5em
+
+.center
+	width: 1040px
+	position: relative
+	left: 50%
+	margin-left: -520px
+	
+.author
+	color: #FFF
+	font-size: 18px
+	position: absolute
+	left: 140px
+	bottom: 40px
+
+@import "media" // Всегда в конце

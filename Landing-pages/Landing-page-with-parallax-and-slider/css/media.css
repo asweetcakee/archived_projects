@@ -1,0 +1,143 @@
+/*  
+    media.css
+    Adaptation 
+    Author: Bekezhan Murat
+*/
+
+
+@media only screen and (max-width: 1200px){
+    .top-line > nav > ul{
+        margin-left: 70%;
+        width: 310px;
+    }
+    fotorama{
+        position: relative;
+        top: -10% !important;
+    }
+    .site-welcome{
+        width: 350px;
+        margin-left: -450px;
+    }
+    .title{
+        font-size: 34px;
+    }
+    .about-text{
+        width: 350px;
+    }
+  
+
+}
+
+@media only screen and (max-width: 992px){
+    .site-header{
+        background-position-x: 50%;
+    }
+    .top-line > nav > ul{
+        width: 310px;
+        margin-left: 60%;
+    }
+    .site-welcome{
+        width: 300px;
+        margin-left: -350px;
+    }
+    .title{
+        font-size: 26px;
+    }
+    #photo{
+        display: none !important;
+    }
+    .about-text{
+        top: 15% !important;
+        width: 250px;
+        font-size: 14px;
+    }
+    .forma{
+        width: 350px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .hamburger{
+        display: block !important;
+    }
+    .top-line{
+        width: 100%;
+        height: 80px;
+        top: 0%;
+        position: relative;
+        left: 50%;
+        margin-left: -50%;
+        background-color: #000;
+    }
+    .site-welcome{
+        top: 50%;
+        width: 200px;
+        margin-left: -200px;
+    }
+    .icon{
+        top: 20%;
+        left: 2%;
+    }
+    .title{
+        margin-bottom: -15px !important;
+        font-size: 18px;
+    }
+    .welcome-text{
+        font-size: 10px;
+    }
+    #photo2{
+        display: none !important;
+    }
+    #my-menu{
+        width: 100%;
+    }
+    .top-line > nav > ul{
+        width: 100% !important;
+        margin-left: 10px;
+    }
+    .site-header{
+        background-position-x: 50%;
+    }
+    .mm-listview{
+        margin-left: 20px !important;
+    }    
+    .my-page{
+        margin-top: -15px;
+    }
+    #photo{
+        display: none !important;
+    }
+    .forma{
+        top: 5%; 
+        margin-left: -175px;
+    }
+    .about-text{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .mm-listview{
+        margin-left: 60px !important;
+    }  
+    .hamburger{
+        padding: 15px 60px 0 0 !important;
+    }
+    .site-welcome{
+        top: 50%;
+        width: 200px;
+        margin-left: -150px;
+    }
+    .forma{
+        width: 280px;
+        margin-left: -140px;
+    }
+    .forma p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    /*hfasjhfkj*/
+}
