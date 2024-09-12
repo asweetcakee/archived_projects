@@ -1,0 +1,48 @@
+# Android Studio files
+.idea/
+.gradle/
+build/
+local.properties
+*.iml
+
+# Android configuration files
+.DS_Store
+*.apk
+*.ap_
+*.dex
+*.so
+*.class
+*.log
+*.lock
+*.jar
+*.war
+*.ear
+*.swp
+*~.nib
+*.orig
+
+# Built application files
+/app/build/
+
+# Gradle files
+.gradle/
+build/
+*/build/
+!gradle-wrapper.jar
+
+# Proguard files
+proguard/
+
+# Logs
+*.log
+
+# Cache
+*.log
+*.cache
+*.class
+
+# Generated files
+gen/
+bin/
+target/
+out/

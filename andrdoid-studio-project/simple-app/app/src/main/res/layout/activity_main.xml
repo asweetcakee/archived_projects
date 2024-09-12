@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark_blue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/bg_dark_blue"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/top_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:paddingStart="12dp"
+            android:text="@string/tv_top_label"
+            android:textColor="@color/txt_color_white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/top_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/comfortaa"
+            android:paddingStart="12dp"
+            android:letterSpacing="0.03"
+            android:text="@string/tv_top_label2"
+            android:textColor="@color/txt_color_faded"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/person_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_person_icon"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textColor="@color/txt_color_white"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textPersonName"
+            android:paddingVertical="20dp"
+            android:hint="@string/et_person_name"
+            android:textColorHint="@color/txt_color_faded"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_smartphone_icon"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textColor="@color/txt_color_white"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="phone"
+            android:paddingVertical="20dp"
+            android:hint="@string/et_phone"
+            android:textColorHint="@color/txt_color_faded"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textColor="@color/txt_color_white"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="20dp"
+            android:hint="@string/et_email"
+            android:textColorHint="@color/txt_color_faded"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textColor="@color/txt_color_white"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textPassword"
+            android:paddingVertical="20dp"
+            android:hint="@string/et_password"
+            android:textColorHint="@color/txt_color_faded"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/password_confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:textColor="@color/txt_color_white"
+            android:fontFamily="@font/comfortaa"
+            android:inputType="textPassword"
+            android:paddingVertical="20dp"
+            android:hint="@string/et_password_confirmation"
+            android:textColorHint="@color/txt_color_faded"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="@string/btn_button"
+            android:textColor="@color/bg_dark_blue"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bottom_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="@string/tv_bottom_label"
+                android:textColor="@color/txt_color_faded"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/bottom_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/tv_bottom_label2"
+                android:textColor="@color/bg_cyan"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

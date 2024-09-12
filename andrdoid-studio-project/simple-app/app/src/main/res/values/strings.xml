@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">beka_lab6</string>
+    <string name="et_person_name">Full name</string>
+    <string name="et_phone">Phone</string>
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+    <string name="et_password_confirmation">Confirm password</string>
+    <string name="btn_button">Sign Up</string>
+    <string name="tv_top_label">Create Account</string>
+    <string name="tv_top_label2">Please fill the input below.</string>
+    <string name="tv_bottom_label">Already have an account?</string>
+    <string name="tv_bottom_label2">Sign in</string>
+
+    <!-- Login Activity -->
+    <string name="logA_tv_top_label">Login</string>
+    <string name="logA_tv_top_label2">Please sign in to continue.</string>
+    <string name="logA_btn_button">Sign In</string>
+    <string name="logA_tv_bottom_label">Don\'t have an account?</string>
+    <string name="logA_tv_bottom_label2">Sign up</string>
+
+    <!-- Profile Activity -->
+    <string name="profA_user_name">User name</string>
+
+    <!-- Cart Activity -->
+    <string name="cart_total">Total: $%.2f</string>
+
+</resources>
